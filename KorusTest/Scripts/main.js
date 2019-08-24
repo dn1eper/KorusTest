@@ -7,24 +7,27 @@ function InitTable() {
                 title: '№',
                 field: 'ContactID',
                 align: 'center',
-                width: 60,
+                width: 50,
                 sortable: true,
                 searchable: false
             },
             {
                 title: 'Фамилия',
                 field: 'SurName',
+                width: 140,
                 sortable: true
             },
             {
                 title: 'Имя',
                 field: 'FirstName',
+                width: 140,
                 sortable: true
             },
             {
                 title: 'Отчество',
                 field: 'Patronymic',
-                sortable: true
+                width: 140,
+                sortable: true  
             },
             {
                 title: 'Адрес',
@@ -33,6 +36,7 @@ function InitTable() {
             {
                 title: 'Телефон',
                 field: 'Telephone.Number',
+                width: 160,
                 formatter: (value) => value.replace(/(\+\d)(\d{3})(\d{3})(\d{2})(\d{2})/, '$1($2)$3-$4-$5')
             },
             {

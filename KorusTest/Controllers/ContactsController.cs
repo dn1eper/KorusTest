@@ -46,6 +46,7 @@ namespace KorusTest.Controllers
             }
 
             db.Entry(contact).State = EntityState.Modified;
+            db.Entry(contact.Telephone).State = EntityState.Modified;
 
             try
             {
